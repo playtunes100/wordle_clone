@@ -1,5 +1,6 @@
+console.log("beeeeee 1")
 import { WORDS } from "./words.js";
-
+console.log("beeeeee")
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
@@ -87,10 +88,10 @@ function checkGuess () {
             // letter is in the right position 
             if (currentGuess[i] === rightGuess[i]) {
                 // shade green 
-                letterColor = 'green'
+                letterColor = '#538d4e'
             } else {
                 // shade box yellow
-                letterColor = 'yellow'
+                letterColor = '#b59f3b'
             }
 
             rightGuess[letterPosition] = "#"
@@ -102,6 +103,7 @@ function checkGuess () {
             animateCSS(box, 'flipInX')
             //shade box
             box.style.backgroundColor = letterColor
+            box.classList.remove("filled-box")
             shadeKeyBoard(letter, letterColor)
         }, delay)
     }

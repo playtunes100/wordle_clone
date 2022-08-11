@@ -1,5 +1,11 @@
+body{
+  background-color: #121213!important;
+}
 h1 {
  text-align: center;
+ font-weight: 700!important;
+ margin: 2rem!important;
+ color: rgb(255, 255, 255);
 }
 
 #game-board {
@@ -9,11 +15,12 @@ h1 {
 }
 
 .letter-box {
-  border: 2px solid gray;
+  border: 2px solid #3a3a3c;
   border-radius: 3px;
   margin: 2px;
   font-size: 2.5rem;
   font-weight: 700;
+  color: rgb(255, 255, 255);
   height: 3rem;
   width: 3rem;
   display: flex;
@@ -23,7 +30,7 @@ h1 {
 }
 
 .filled-box {
-  border: 2px solid black;
+  border: 2px solid #565758;
 }
 
 .letter-row {
